@@ -1,5 +1,6 @@
 # Movie Recommendation Function
 
+![1_N0-ikjPv4RUVvS-6KCgLPg](https://user-images.githubusercontent.com/76961031/118359877-4f3efe80-b57d-11eb-8bf2-3cfa29d11bd5.jpeg)
 
 I have made two collaberative filtering film recommendation functions. 
 
@@ -11,6 +12,15 @@ The first uses a simple similarity score between groups of users:
 | 4432   | 2        | 2  |
 
 
-<u>$(user_rating - your_rating)2$</u>
-                2
+x = (user_rating - your_rating)/2
+movie_difference = pow(x,2)            
 
+similarity = sum(movie_difference for each movie)
+
+by calculating similarity in this way, higher differences between film ratings of different users are penalised more and smaller differences are penalised less. we also never deal with negative numbers this way.
+
+
+The second uses the SVD algorithm which is trained on the movielens dataset in the repository file.
+
+
+Please feel free to download the notebook and see which films either recommender gives you!
