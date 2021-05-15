@@ -2,7 +2,7 @@
 
 ![1_N0-ikjPv4RUVvS-6KCgLPg](https://user-images.githubusercontent.com/76961031/118359877-4f3efe80-b57d-11eb-8bf2-3cfa29d11bd5.jpeg)
 
-I have made two collaberative filtering film recommendation functions. 
+I have made two collaberative filtering film recommendation functions using the movielens 250k dataset which can be downloaded here: https://grouplens.org/datasets/movielens/. 
 
 The **first** uses a simple similarity score between groups of users:
 
