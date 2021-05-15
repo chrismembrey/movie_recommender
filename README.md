@@ -11,4 +11,4 @@ The first uses a simple similarity score between groups of users:
 | 4432   | 2        | 2  |
 
 
-((user_rating - your_rating)/2)^2
+$((user_rating - your_rating)/2)$2
