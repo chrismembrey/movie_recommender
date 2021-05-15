@@ -4,7 +4,7 @@
 
 I have made two collaberative filtering film recommendation functions. 
 
-The first uses a simple similarity score between groups of users:
+The **first** uses a simple similarity score between groups of users:
 
 | movieid     | user_rating | your_rating |
 | ----------- | ----------- | ----------- |
@@ -13,14 +13,16 @@ The first uses a simple similarity score between groups of users:
 
 
 x = (user_rating - your_rating)/2
+
 movie_difference = pow(x,2)            
 
 similarity = sum(movie_difference for each movie)
 
-by calculating similarity in this way, higher differences between film ratings of different users are penalised more and smaller differences are penalised less. we also never deal with negative numbers this way.
+
+By calculating similarity in this way, higher differences between film ratings of different users are penalised more and smaller differences are penalised less. we also never deal with negative numbers this way.
 
 
-The second uses the SVD algorithm which is trained on the movielens dataset in the repository file.
+The **second** uses the SVD algorithm which is trained on the movielens dataset in the repository file.
 
 
 Please feel free to download the notebook and see which films either recommender gives you!
