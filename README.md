@@ -12,7 +12,7 @@ The **first** uses a simple similarity score between groups of users:
 | 4432   | 2        | 2  |
 
 
-x = (user_rating - your_rating)/2
+x = (user_rating - your_rating)/total_user_ratings  -----> By doing this, the number of films matching your given number of films is taken into consideration.
 
 movie_difference = pow(x,2)            
 
@@ -22,7 +22,7 @@ similarity = sum(movie_difference for each movie)
 By calculating similarity in this way, higher differences between film ratings of different users are penalised more and smaller differences are penalised less. we also never deal with negative numbers this way.
 
 
-The **second** uses the SVD algorithm which is trained on the movielens dataset in the repository file.
+The **second** uses the SVD algorithm which is trained on the movielens dataset.
 
 
 Please feel free to download the notebook and see which films either recommender gives you!
